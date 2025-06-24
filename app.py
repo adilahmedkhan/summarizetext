@@ -20,7 +20,7 @@ generic_url=st.text_input("URL",value="https://mettisglobal.news/latest/",label_
 llm =ChatGroq(model="gemma2-9b-it", groq_api_key=groq_api_key)
 
 prompt_template="""
-Provide a summary of the following content in {summary_count} words:
+Provide a summary of the following content in 1000 words:
 Content:{text}
 
 """
